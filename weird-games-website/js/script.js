@@ -17,3 +17,23 @@ document.addEventListener('click', (e) => {
 slides.forEach((slide, index) => {
     slide.style.transform = `translateX(${100 * index}%)`;
 });
+
+// Add this to the end of your existing JavaScript file
+
+document.querySelectorAll('.section').forEach(section => {
+    section.addEventListener('mouseenter', () => {
+      section.style.backgroundColor = '#ffffff';
+    });
+  
+    section.addEventListener('mouseleave', () => {
+      section.style.backgroundColor = '';
+    });
+  });
+  
+  // Simple placeholder for buy button functionality
+  document.querySelectorAll('.buy-button').forEach(button => {
+    button.addEventListener('click', (e) => {
+      alert(`You clicked Buy Now for ${e.target.closest('.section').querySelector('h2').textContent}`);
+      // Here you would typically integrate with your e-commerce system
+    });
+  });

@@ -3,7 +3,6 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
-    overflow: hidden;
     background-color: #f0f0f0;
 }
 .logo {
@@ -36,7 +35,7 @@ body, html {
     transition: transform 0.5s ease;
 }
 .hero-image {
-    flex: 0 0 66.67%; /* 80% of 120% */
+    flex: 0 0 66.67%;
     height: 100%;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
     z-index: 2;
@@ -44,7 +43,7 @@ body, html {
     background-position: center;
 }
 .next-image {
-    flex: 0 0 33.33%; /* 40% of 120% */
+    flex: 0 0 33.33%;
     height: 100%;
     filter: brightness(70%);
     z-index: 1;
@@ -104,3 +103,53 @@ body, html {
     0% { top: 5px; opacity: 1; }
     100% { top: 35px; opacity: 0; }
 }
+.interactive-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #f0f0f0;
+  }
+  
+.section {
+    flex: 1;
+    margin: 0 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+.section:hover {
+    transform: translateY(-10px);
+  }
+  
+.section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+.section:hover h2 {
+    transform: translateY(-5px);
+  }
+  
+.buy-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+.buy-button:hover {
+    background-color: #555;
+  }
+  
+#haiw-original { background-color: #FFBF00; }
+#haiw-square { background-color: #FF5087; }
+#anger-smash { background-color: #088AFD; }
